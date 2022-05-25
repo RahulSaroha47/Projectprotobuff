@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"protobuff/protobean"
+
+	"github.com/RahulSaroha47/Projectprotobuff/protobean"
 	"google.golang.org/protobuf/proto"
 )
 
