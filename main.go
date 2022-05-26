@@ -18,16 +18,16 @@ func main() {
 		City:    "Hisar",
 	}
 
-	data, err := proto.Marshal(person)
+	personData, err := proto.Marshal(person)
 	if err != nil {
 		log.Fatal("marshaling error: ", err)
 	}
 
-	if err := ioutil.WriteFile("proto", data, 0644); err != nil {
+	if err := ioutil.WriteFile("proto", personData, 0644); err != nil {
 		log.Fatalln("Failed to write address book:", err)
 	}
 
-	fmt.Println(data)
+	fmt.Println(personData)
 
 	in, err := ioutil.ReadFile("proto")
 
