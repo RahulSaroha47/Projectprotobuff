@@ -1,4 +1,4 @@
-syntax = "proto3";
+syntax = "proto2";
 
 package protobean;
 
@@ -6,10 +6,10 @@ option go_package = "/;protobean";
 
 message Person {
 
-    string name = 1;
-    int32 age   = 2;
-    int32 pincode = 3;
-    string city = 4;
-
+   optional string name = 1;
+   optional int32 age   = 2;
+   optional int32 pincode = 3;
+   optional string city = 4;
+   
 }
 
